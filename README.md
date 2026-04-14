@@ -1,34 +1,42 @@
-# Earthquake Map ©
+# Earthquake Map
 
-## App description
+An interactive Java applet that visualizes earthquakes and cities worldwide, with features for exploring seismic data on a live map.
 
-An interactive map showing all earthquakes and cities around the world. This is a Java applet which provides interactive features for searching and visualising earthquake data. 
+## Features
+
+- Browse earthquake and city markers across a global map
+- Hover over a **city marker** to see its name, country, and population
+- Hover over an **earthquake marker** to see its magnitude and region
+- Click a **city marker** to isolate it and show only earthquakes that could affect it
+- Click an **earthquake marker** to show only cities within its potential impact zone
+- Click the active marker again to restore the full map view
+- Zoom into any location by clicking directly on the map
 
 ## Installation
 
-Firstly, clone the repository on your local machine. If you work in Eclipse, import the ```UnfoldingMapsProject``` folder in editor (```File``` -> ```Import``` -> ```Existing Projects into Workspace```, Select this folder, ```Finish```). 
-These steps are simmilar and for other IDE.
+### Eclipse
 
-**Manual instalation**
+1. Clone the repository to your local machine
+2. Open Eclipse and go to **File → Import → Existing Projects into Workspace**
+3. Select the `UnfoldingMapsProject` folder and click **Finish**
 
-If the import does not work follow the steps below.
+### Other IDEs
 
-- Create new Java project;
-- Copy + Paste all files into project;
-- Add all ```lib/*.jars``` to build path;
-- Set native library location for ```jogl.jar```. Choose appropriate folder for your OS;
-- Add ```data/``` as ```src```.
+1. Clone the repository to your local machine
+2. Create a new Java project in your IDE
+3. Copy all project files into the project directory
+4. Add all JARs from the `lib/` folder to your build path
+5. Set the native library location for `jogl.jar` to the folder matching your OS
+6. Add the `data/` folder as a source (`src`) directory
 
-## Trouble shooting
+## Troubleshooting
 
-Switch Java Compiler to 1.6 if you get VM problems. (Processing should work with Java 1.6, and 1.7)
+| Problem | Solution |
+|---|---|
+| VM errors on launch | Switch the Java Compiler version to **1.6** or **1.7** in your IDE settings (Processing is compatible with both) |
 
+## Preview
 
-## Output
+After building the project, the map will launch and display markers for earthquakes and cities around the world. Interact with the markers to explore seismic data and city details.
 
-After compiling the entire project you should see this output. Play around the markers on the map in order to catch the information you want. 
-When a city marker is hovered, the map will display a box with the city’s name, country, and population. For an earthquake marker, the map will display the title of the earthquake (including its magnitude and region).  Clicking on a marker gives even more information: a click on a city marker will lead to only that city and earthquakes which affect it being displayed on the map.  Clicking once again on that marker will bring the rest of the map’s markers back.  Similarly, after clicking on an earthquake marker, only cities potentially affected by that earthquake will be displayed. 
-
-You can zoom particular location by clicking directly on map.
-
-![image](https://user-images.githubusercontent.com/92053176/165777253-b5ba4ea2-44af-45d3-b155-6cdc21d78dd7.png)
+<img width="900" height="739" alt="earthquake-applet-view" src="https://github.com/user-attachments/assets/c5f4f15e-3cc9-4aee-9822-9c6078d43112" />
